@@ -1,5 +1,5 @@
 const { countRepeatedCharacters } = require("./task");
 
-const string = "sbdcbdvns bnmsnvff";
+const string = "dnlnmflksdnmlkfdnglk";
 countRepeatedCharacters(string);
 console.log(countRepeatedCharacters(string));
