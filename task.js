@@ -5,12 +5,9 @@ const countRepeatedCharacters = (str) => {
   for (let i = 0; i < str.length; i++) {
     const char = str.charAt(i);
 
-    if (charCount[char]) {
+    if (charCount[char] && !repeatedChars[char]) {
       charCount[char]++;
-
-      if (!repeatedChars[char]) {
-        repeatedChars[char] = charCount[char];
-      }
+      repeatedChars[char] = charCount[char];
     } else {
       charCount[char] = 1;
     }
